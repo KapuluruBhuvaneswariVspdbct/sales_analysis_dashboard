@@ -1,0 +1,26 @@
+
+          <h2 style="color: #044c14; text-align: center; margin-top: 40px; font-weight: 700; font-family: 'Lato', sans-serif;">
+  🛒 Excel- sales insights– KEY INSIGHTS
+</h2>
+
+<div class="grid-row row-2" style="display: flex; width: 100%; margin-top: 25px; justify-content: center; gap: 30px;">
+
+  <!-- Buttons Section -->
+  <div style="width: 260px; display: flex; flex-direction: column; gap: 15px; background-color: #A0C878; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <button onclick="showSalesVisual('e1.png')" style="padding: 12px; font-size: 16px;">📊 Market vs Target</button> 
+          <button onclick="showSalesVisual('CUSTOMERPER.png')" style="padding: 12px; font-size: 16px;">👥 Customer Performance</button> 
+          <button onclick="showSalesVisual('PLMARKET.png')" style="padding: 12px; font-size: 16px;">🌍 P&L - Markets</button> 
+          <button onclick="showSalesVisual('PLFISCAL.png')" style="padding: 12px; font-size: 16px;">📅 P&L - Fiscal Year</button> 
+ </div>
+
+  <!-- Image Display Section -->
+  <div style="flex-grow: 1; text-align: center;">
+    <img id="salesVisualDisplay" src="e1.png" alt="Sales Visual" width="850" height="520" style="border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.2); max-width: 100%;">
+  </div>
+</div>
+
+<script>
+  function showSalesVisual(imageSrc) {
+    document.getElementById('salesVisualDisplay').src = imageSrc;
+  }
+</script>
